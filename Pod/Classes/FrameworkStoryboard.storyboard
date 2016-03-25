@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--FrameworkVC-->
+        <scene sceneID="t01-0h-ooA">
+            <objects>
+                <viewController id="8hE-TU-ttV" customClass="FrameworkVC" customModule="MyFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWy-Dq-V2J"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrQ-Uv-kCm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZl-9Q-qIg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hTe-0Q-ZQX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hTe-0Q-ZQX" secondAttribute="trailing" id="1Ht-7B-5PI"/>
+                            <constraint firstAttribute="bottom" secondItem="hTe-0Q-ZQX" secondAttribute="bottom" id="TMY-fe-uVQ"/>
+                            <constraint firstItem="hTe-0Q-ZQX" firstAttribute="top" secondItem="mZl-9Q-qIg" secondAttribute="top" id="az3-L9-ET9"/>
+                            <constraint firstItem="hTe-0Q-ZQX" firstAttribute="leading" secondItem="mZl-9Q-qIg" secondAttribute="leading" id="dk0-DW-I10"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L4i-UR-QTl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGH-Pv-CYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="373"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5yh-2b-I79">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6XA-bj-Gie" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7MC-kU-7tS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8hE-TU-ttV" kind="relationship" relationship="rootViewController" id="bNp-jO-zwC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfa-Fg-Ojs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="373"/>
+        </scene>
+    </scenes>
+</document>

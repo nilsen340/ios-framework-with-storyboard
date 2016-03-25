@@ -1,0 +1,25 @@
+{
+  "name": "MyFramework",
+  "version": "0.1.0",
+  "summary": "A short description of MyFramework.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/MyFramework",
+  "license": "MIT",
+  "authors": {
+    "John Nilsen": "nilsen340@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/MyFramework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "MyFramework": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
