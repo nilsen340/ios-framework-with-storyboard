@@ -8,22 +8,30 @@
 
 import UIKit
 
-class FrameworkVC: UIViewController {
+public class FrameworkVC: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var tableView: UITableView!
+    override public func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let podBundle = NSBundle(forClass: FrameworkVC.self)
+        
+        let bundleURL = podBundle.URLForResource("MyFramework", withExtension: "bundle")
+        let bundle = NSBundle(URL: bundleURL!)!
+        let cellNib = UINib(nibName: "OurCell", bundle: bundle)
+        tableView.registerNib(cellNib, forCellReuseIdentifier: "OurCell")
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
+}
 
-    /*
-    // MARK: - Navigation
+extension FrameworkVC: UITableViewDelegate {}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension FrameworkVC: UITableViewDataSource {
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCellWithIdentifier("OurCell")!
     }
-    */
-
+    
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
 }
