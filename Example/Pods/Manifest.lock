@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MyFramework: ecd130ad084cc5c16d4081b70b218ac313145a92
+  MyFramework: 8200fb47c0fcfcc64ef5c1afc5d8a9952963e8e2
 
 COCOAPODS: 0.39.0

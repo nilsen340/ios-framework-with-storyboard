@@ -19,7 +19,7 @@
   "source_files": "Pod/Classes/**/*.{swift}",
   "resource_bundles": {
     "MyFramework": [
-      "Pod/Classes/**/*.{storyboard,xib}"
+      "Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}"
     ]
   }
 }
