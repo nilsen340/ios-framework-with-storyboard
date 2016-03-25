@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*.{swift}'
   s.resource_bundles = {
-    'MyFramework' => ['Pod/Classes/**/*.{storyboard,xib}']
+    'MyFramework' => ['Pod/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
   }
 end
