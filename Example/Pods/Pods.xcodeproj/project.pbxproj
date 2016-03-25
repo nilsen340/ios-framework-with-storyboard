@@ -14,6 +14,7 @@
 		1517FF4577718F4FBC81EC801EC45D1C /* Pods-MyFramework_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED231E063A158478158B44B825FB120A /* Pods-MyFramework_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C7EB4A68A930B95E0BC3774E1089968 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7990C5AD7B03B0AE3369913DFDDC31 /* ReplaceMe.swift */; };
 		52FFC3B51CA5AA1800E11C27 /* MyFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFC3B41CA5AA1800E11C27 /* MyFramework.swift */; };
+		52FFC3B71CA5B53700E11C27 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FFC3B61CA5B53700E11C27 /* images.xcassets */; };
 		69ED8DCE453147313D4DDB0E4A15E4DB /* Pods-MyFramework_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6732260960065DFC0D7157C7C96FFB /* Pods-MyFramework_Example-dummy.m */; };
 		72C7CBE47D0DA5610B948AB0A4894E79 /* Pods-MyFramework_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C05A3958CF39F6D2A8BCD95C0A74AF45 /* Pods-MyFramework_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A100C8ACC34CC333E01F7A5F387E8E73 /* FrameworkStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481EF8E2C51E16BD1F1AB1A2DEA04F63 /* FrameworkStoryboard.storyboard */; };
@@ -58,6 +59,7 @@
 		481EF8E2C51E16BD1F1AB1A2DEA04F63 /* FrameworkStoryboard.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = FrameworkStoryboard.storyboard; sourceTree = "<group>"; };
 		51C8B0BE9EAF611F8C788983026A4534 /* Pods_MyFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFC3B41CA5AA1800E11C27 /* MyFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFramework.swift; sourceTree = "<group>"; };
+		52FFC3B61CA5B53700E11C27 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		543934A4B44D501847209DF3C4AA2A34 /* Pods-MyFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		57C4E15652530840E198A31855EA5265 /* OurCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OurCell.xib; sourceTree = "<group>"; };
 		5A2AEC67521AB102EF476F5FD77D2E6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				774A67EC6FC1223DD44DC132CB18DAD5 /* FrameworkVC.swift */,
 				9F7990C5AD7B03B0AE3369913DFDDC31 /* ReplaceMe.swift */,
 				52FFC3B41CA5AA1800E11C27 /* MyFramework.swift */,
+				52FFC3B61CA5B53700E11C27 /* images.xcassets */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00456145DE19CCAF8B461337D356D00F /* MyFramework.bundle in Resources */,
+				52FFC3B71CA5B53700E11C27 /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="420" height="108"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CuX-1g-eM2">
+                        <rect key="frame" x="90" y="24" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="cD3-CB-IUd"/>
+                            <constraint firstAttribute="height" constant="60" id="oiy-Km-SAK"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is our cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPq-Il-ddo">
                         <rect key="frame" x="155" y="43" width="110" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -26,10 +33,15 @@
                     <constraint firstAttribute="bottomMargin" secondItem="XPq-Il-ddo" secondAttribute="bottom" constant="36" id="FWY-s0-FSz"/>
                     <constraint firstItem="XPq-Il-ddo" firstAttribute="centerX" secondItem="CzI-Xu-xjv" secondAttribute="centerX" id="Nwy-Pg-bXG"/>
                     <constraint firstItem="XPq-Il-ddo" firstAttribute="centerY" secondItem="CzI-Xu-xjv" secondAttribute="centerY" id="VUb-eE-0Zx"/>
+                    <constraint firstItem="CuX-1g-eM2" firstAttribute="centerY" secondItem="CzI-Xu-xjv" secondAttribute="centerY" id="Vvt-uv-x7X"/>
                     <constraint firstItem="XPq-Il-ddo" firstAttribute="top" secondItem="CzI-Xu-xjv" secondAttribute="topMargin" constant="35" id="jiO-69-xcL"/>
+                    <constraint firstItem="XPq-Il-ddo" firstAttribute="leading" secondItem="CuX-1g-eM2" secondAttribute="trailing" constant="5" id="pCT-iC-sKj"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="287" y="298.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="logo" width="500" height="500"/>
+    </resources>
 </document>
